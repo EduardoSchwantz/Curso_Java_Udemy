@@ -21,19 +21,23 @@ public class Bank {
             value = sc.nextDouble();
 
             client = new Account(accountName, accountNumber, value);
+            System.out.println();
             System.out.println(client);
         } else {
             client = new Account(accountName, accountNumber);
+            System.out.println();
             System.out.println(client);
         }
 
         System.out.print("\nEnter a deposit value: ");
         value = sc.nextDouble();
         client.deposit(value);
+        System.out.print("Updated " + client.toString());
 
         System.out.print("\nEnter a withdraw value: ");
         value = sc.nextDouble();
         client.withDraw(value);
+        System.out.print("Updated " + client.toString());
         sc.close();
     }
 }

@@ -7,10 +7,10 @@ public class Account {
    private final int numAccount;
    private double balance;
 
-   public Account(String nameAccount, int numAccount, double balance) {
+   public Account(String nameAccount, int numAccount, double intialDeposit) {
       this.nameAccount = nameAccount;
       this.numAccount = numAccount;
-      this.balance = balance;
+      deposit(intialDeposit);
    }
    public Account(String nameAccount, int numAccount) {
       this.nameAccount = nameAccount;
@@ -37,11 +37,9 @@ public class Account {
 
    public void deposit(double value) {
       this.balance += value;
-      System.out.print("Updated " +toString());
    }
    public void withDraw(double value){
       this.balance -= value + 5.00;
-      System.out.println("Updated " + toString());
    }
 
    @Override
