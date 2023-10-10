@@ -20,5 +20,6 @@ public class Ex2 {
         func.increaseSalary(percentage);
         System.out.println("\nUpdated data: " + func);
         sc.close();
+        
     }
 }
