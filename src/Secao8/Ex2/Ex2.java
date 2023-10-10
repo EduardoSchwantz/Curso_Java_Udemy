@@ -1,4 +1,4 @@
-package Secao8;
+package Secao8.Ex2;
 
 import java.util.Locale;
 import java.util.Scanner;

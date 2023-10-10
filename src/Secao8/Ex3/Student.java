@@ -1,4 +1,4 @@
-package Secao8;
+package Secao8.Ex3;
 
 public class Student {
     public String name;

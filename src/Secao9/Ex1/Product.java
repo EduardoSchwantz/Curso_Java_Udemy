@@ -1,4 +1,4 @@
-package Secao9;
+package Secao9.Ex1;
 
 public class Product {
     private String name;

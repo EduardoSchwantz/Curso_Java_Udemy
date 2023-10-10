@@ -1,4 +1,4 @@
-package Secao8;
+package Secao8.Ex1;
 
 public class Rectangle {
     double width, height;

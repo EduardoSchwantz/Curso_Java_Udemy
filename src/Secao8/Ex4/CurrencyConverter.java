@@ -1,4 +1,4 @@
-package Secao8;
+package Secao8.Ex4;
 
 public class CurrencyConverter {
     public static double IOF = 0.06;
