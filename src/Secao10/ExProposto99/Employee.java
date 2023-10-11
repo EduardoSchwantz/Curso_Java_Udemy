@@ -1,4 +1,4 @@
-package Secao10.ExProposto;
+package Secao10.ExProposto99;
 
 public class Employee {
     private final int id;
