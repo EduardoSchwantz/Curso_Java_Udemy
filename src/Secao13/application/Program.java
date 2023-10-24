@@ -5,7 +5,6 @@ import Secao13.model.entities.Order;
 import Secao13.model.entities.OrderItem;
 import Secao13.model.entities.Product;
 import Secao13.model.enums.OrderStatus;
-
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -31,6 +30,7 @@ public class Program {
         Client client = new Client(name, email, birthDate);
 
         System.out.println("Enter order data:");
+        System.out.println(OrderStatus.DELIVERED + "\n"+ OrderStatus.SHIPPED + "\n" + OrderStatus.PENDING_PAYMENT +"\n"+ OrderStatus.PROCESSING);
         System.out.print("Status: ");
         OrderStatus status = OrderStatus.valueOf(sc.next());
 

@@ -71,7 +71,7 @@ public class Order {
         sb.append(sdf.format(moment)).append("\n");
         sb.append("Order status: ");
         sb.append(status).append("\n");
-        sb.append("Client: ");
+        sb.append("Client: \n");
         sb.append(client).append("\n");
         sb.append("Order items:\n");
         for (OrderItem item : items) {

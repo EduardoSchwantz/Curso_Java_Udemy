@@ -35,4 +35,9 @@ public class Client {
     public void setBirthDate(Date birthDate) {
         this.birthDate = birthDate;
     }
+
+    @Override
+    public String toString() {
+        return "Name: " + name + ", E-mail: " + email;
+    }
 }
