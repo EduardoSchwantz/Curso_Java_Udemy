@@ -1,5 +1,6 @@
 package Secao14.ExFixacao.entities;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class UsedProduct extends Product {
@@ -22,9 +23,11 @@ public class UsedProduct extends Product {
         this.manufactureDate = manufactureDate;
     }
 
+    @Override
     public String priceTag() {
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
         return super.getName() + " (used) " + "$ " +
                 String.format("%.2f", super.getPrice()) +
-                "(Manufacture date: " + this.manufactureDate + ")";
+                " (Manufacture date: " + sdf.format(getManufactureDate()) + ")";
     }
 }
