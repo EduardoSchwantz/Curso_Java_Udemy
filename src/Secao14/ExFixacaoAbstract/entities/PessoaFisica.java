@@ -1,13 +1,13 @@
 package Secao14.ExFixacaoAbstract.entities;
 
-public class pessoaFisica extends Pessoa {
+public class PessoaFisica extends Pessoa {
     private Double gastoSaude;
 
-    public pessoaFisica() {
+    public PessoaFisica() {
         super();
     }
 
-    public pessoaFisica(String nome, Double rendaAnual, Double gastoSaude) {
+    public PessoaFisica(String nome, Double rendaAnual, Double gastoSaude) {
         super(nome, rendaAnual);
         this.gastoSaude = gastoSaude;
     }
@@ -24,8 +24,7 @@ public class pessoaFisica extends Pessoa {
     public Double imposto() {
         if (super.getRendaAnual() <= 20000.00) {
             return (super.getRendaAnual() * 0.15) - (getGastoSaude() * 0.5);
-        }
-        else
+        } else
             return (super.getRendaAnual() * 0.25) - (getGastoSaude() * 0.5);
     }
 

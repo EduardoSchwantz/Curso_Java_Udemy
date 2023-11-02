@@ -1,22 +1,22 @@
 package Secao14.ExFixacaoAbstract.entities;
 
-public class pessoaJuridica extends Pessoa {
-    private Double numFuncionarios;
+public class PessoaJuridica extends Pessoa {
+    private Integer numFuncionarios;
 
-    public pessoaJuridica() {
+    public PessoaJuridica() {
         super();
     }
 
-    public pessoaJuridica(String nome, Double rendaAnual, Double numFuncionarios) {
+    public PessoaJuridica(String nome, Double rendaAnual, Integer numFuncionarios) {
         super(nome, rendaAnual);
         this.numFuncionarios = numFuncionarios;
     }
 
-    public Double getNumFuncionarios() {
+    public Integer getNumFuncionarios() {
         return numFuncionarios;
     }
 
-    public void setNumFuncionarios(Double numFuncionarios) {
+    public void setNumFuncionarios(Integer numFuncionarios) {
         this.numFuncionarios = numFuncionarios;
     }
 
